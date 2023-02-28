@@ -1,0 +1,116 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 10px;
+}
+
+div {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: sans-serif;
+}
+
+main {
+  height: 100%;
+  background-color: lightgray;
+}
+
+header,
+footer {
+  background-color: #1f2937;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  padding: 10px 80px 100px;
+}
+
+footer {
+  flex: 1 0 auto;
+  height: 60px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  flex: 1;
+  font-size: 1.5rem;
+}
+
+.header-greeting {
+  flex: 1;
+}
+.header-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+
+.nav-items {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-items a:hover {
+  scale: 1.1;
+}
+
+.header-row:first-child {
+  /* targets the first header row */
+  margin-top: 10px;
+  margin-bottom: 60px;
+  gap: 20px;
+}
+
+.header-row:nth-child(2) {
+  /* targets the second header row */
+  gap: 20px;
+}
+
+@media (max-width: 950px) {
+  .nav-items {
+    flex-direction: column;
+    gap: 5px;
+  }
+  header {
+    padding: 10px 40px 100px;
+  }
+}
+
+.header-row button {
+  border: none;
+  border-radius: 5px;
+  background-color: #3882f6;
+  color: inherit;
+  padding: 5px 15px;
+  margin-top: 10px;
+}
