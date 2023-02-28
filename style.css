@@ -28,11 +28,13 @@ body {
 main {
   height: 100%;
   background-color: lightgray;
+  color: black;
 }
 
 header,
 footer {
   background-color: #1f2937;
+  display: flex;
 }
 
 header {
@@ -45,16 +47,35 @@ header {
 footer {
   flex: 1 0 auto;
   height: 60px;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#current-year {
+  margin-left: 0.3rem;
+}
+
+#github-link-img {
+  height: 1.2rem;
+  margin-left: 0.3rem;
 }
 
 .header-row {
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 
 .header-logo {
   flex: 1;
   font-size: 1.5rem;
+}
+
+.nav-items {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
 }
 
 .header-greeting {
@@ -66,13 +87,6 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: grey;
-}
-
-.nav-items {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .nav-items a {
@@ -103,6 +117,48 @@ footer {
   color: inherit;
   padding: 5px 15px;
   margin-top: 10px;
+}
+
+.main-1 {
+  padding: 35px 15px 100px;
+  background-color: white;
+  text-align: center;
+}
+
+.main-1 h1 {
+  margin-bottom: 35px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.image-group {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100px;
+}
+
+.images * {
+  display: flex;
+  justify-content: center;
+}
+
+.sample-image {
+  border: 2px blue solid;
+  border-radius: 10px;
+  flex: 1 0 auto;
+  min-height: 100px;
+  min-width: 100px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.image-group div:nth-child(2) {
+  font-size: 0.8rem;
 }
 
 @media (max-width: 850px) {

@@ -16,7 +16,6 @@
           ><a href="#">header link 3</a><a href="#">header link 4</a>
         </div>
       </div>
-
       <div class="header-row">
         <div class="header-greeting">
           <h2>This website is awesome</h2>
@@ -34,7 +33,49 @@
         </div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div class="main-1">
+        <h1>Some Random Information</h1>
+        <div class="images">
+          <div class="image-group">
+            <div class="sample-image"></div>
+            <div class="caption">
+              this is some subtext under an illustration or image
+            </div>
+          </div>
+          <div class="image-group">
+            <div class="sample-image"></div>
+            <div class="caption">
+              this is some subtext under an illustration or image
+            </div>
+          </div>
+          <div class="image-group">
+            <div class="sample-image"></div>
+            <div class="caption">
+              this is some subtext under an illustration or image
+            </div>
+          </div>
+          <div class="image-group">
+            <div class="sample-image"></div>
+            <div class="caption">
+              this is some subtext under an illustration or image
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      © Carlin Mitchell <span id="current-year"></span>
+      <a
+        id="github-icon-link"
+        href="https://github.com/carlin-mitchell/landing-page-frontend-TOP"
+      >
+        <img id="github-link-img" src="./assets/github-mark-white.png" alt="" />
+      </a>
+    </footer>
+    <script>
+      const currentYear = document.querySelector("#current-year");
+      currentYear.innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>
