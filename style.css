@@ -1,7 +1,8 @@
 html,
 body {
   margin: 0;
-  height: 100%;
+  min-height: 100%;
+  min-width: 250px;
 }
 
 h1,
@@ -27,7 +28,6 @@ body {
 
 main {
   height: 100%;
-  background-color: lightgray;
   color: black;
 }
 
@@ -40,7 +40,7 @@ footer {
 header {
   display: flex;
   flex-direction: column;
-  flex: 1 0 auto;
+  flex: 1 0 0;
   padding: 10px 80px 100px;
 }
 
@@ -50,6 +50,10 @@ footer {
   font-size: 1.2rem;
   justify-content: center;
   align-items: center;
+}
+
+button:active {
+  scale: 0.9;
 }
 
 #current-year {
@@ -133,6 +137,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .image-group {
@@ -140,6 +145,10 @@ footer {
   flex-direction: column;
   height: 100%;
   width: 100px;
+}
+.image-group-2 {
+  display: flex;
+  gap: inherit;
 }
 
 .images * {
@@ -159,6 +168,75 @@ footer {
 
 .image-group div:nth-child(2) {
   font-size: 0.8rem;
+}
+
+.main-2 {
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 25% 100px;
+  overflow: auto;
+  font-size: 1.2rem;
+}
+
+.quote {
+  font-style: italic;
+  font-weight: lighter;
+  width: 100%;
+  min-height: min-content;
+  text-align: justify;
+}
+
+.quote-attribution {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  font-weight: bold;
+}
+
+.main-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  color: white;
+}
+.call-to-action {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #3882f6;
+  border-radius: 10px;
+  padding: 30px 60px;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.call-to-action-group {
+  flex: 3;
+}
+
+.info {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+.button {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.button button {
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: inherit;
+  padding: 5px 15px;
 }
 
 @media (max-width: 850px) {
