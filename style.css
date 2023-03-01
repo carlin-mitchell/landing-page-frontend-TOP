@@ -56,6 +56,10 @@ button:active {
   scale: 0.9;
 }
 
+button:hover {
+  background-color: #3869b7 !important;
+}
+
 #current-year {
   margin-left: 0.3rem;
 }
@@ -234,7 +238,7 @@ button:active {
 .button button {
   border: 2px solid white;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: #3882f6;
   color: inherit;
   padding: 5px 15px;
 }
